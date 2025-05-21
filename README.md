@@ -1,39 +1,12 @@
-# aulaev-21-05
+# React + Vite
 
-/*
-const logado = true
-if(logado){
-  return console.log()
-}else{
-  return console.log()
-}
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-//if operador ternário
-{logado ? 'Bem vindo' :'Fazer login'}
+Currently, two official plugins are available:
 
-//if com operador lógico
-{!logado &&
-  <div>
-    <p>Faça login</p>
-    <button>Clique aqui para fazer login</button>
-  </div>
-}*/
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-//REDENRIZAÇAO CONDICIONAL
-import {useState} from 'react'
-export default function App(){
-const [logado, setLogado] = useState(false)
+## Expanding the ESLint configuration
 
-function alternarlogin(){
-  setLogado(!logado)
-}
-
-  return (
-    <>
-     {logado ? <p>Bem vindo</p> : <p>Você precisa fazer login</p>}
-     <button onClick={alternarlogin}>
-      {logado ?'sair' :'Entrar'}
-     </button>
-    </>
-  )
-}
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
